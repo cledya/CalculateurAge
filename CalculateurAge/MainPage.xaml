@@ -10,10 +10,21 @@
                Placeholder="Votre nom"/>
             <Label Text="Date de naissance" FontSize="16"/>
             <DatePicker Date="{Binding DateNaissance}"/>
+
             <Button Text="Calculer"
                 Command="{Binding CalculerCommand}"/>
+            <Button Text="Effacer"
+                Command="{Binding EffacerCommand}"/>
+
             <Label Text="{Binding Resultat}" FontSize="20"
                IsVisible="{Binding ResultatVisible}"/>
+            <Label Text="{Binding Statut}" FontSize="16"
+               IsVisible="{Binding ResultatVisible}"/>
+            <Label Text="{Binding Anniversaire}" FontSize="16"
+               IsVisible="{Binding ResultatVisible}"/>
+
+            <Button Text="Voir les détails"
+        Command="{Binding VoirDetailCommand}"/>
         </VerticalStackLayout>
     </ScrollView>
 
